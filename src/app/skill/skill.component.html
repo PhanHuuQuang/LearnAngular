@@ -1,0 +1,12 @@
+<section class="skills-container">
+  <p class="skills-title">Skills</p>
+  <h1 class="skills-text">What I am capable of?</h1>
+  <div class="skills-image-container">
+    <fa-icon
+      class="skills-icon"
+      *ngFor="let item of skillList"
+      [icon]="item.icon"
+      [ngStyle]="{ color: item.color }"
+    />
+  </div>
+</section>

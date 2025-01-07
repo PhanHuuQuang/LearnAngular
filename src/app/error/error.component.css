@@ -1,0 +1,47 @@
+.error-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 100px 0 0 0;
+    /* background-color: #e4f1fe; */
+    background-color: lightblue;
+
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 9em;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.icon {
+    margin: 10px;
+    font-size: 120px;
+    animation: rotate 2s infinite linear;
+}
+
+.link-home {
+    margin-top: 30px;
+}
+
+.link-home a {
+    color: white;
+    cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

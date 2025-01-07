@@ -1,0 +1,38 @@
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 25px;
+    background-color: #e4f1fe;
+    border-bottom: 2px outset wheat;
+}
+
+.menu-name {
+    margin: 0;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    user-select: none;
+}
+
+.menu-list button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.menu-list button:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.active {
+    text-shadow: 2px 2px 5px #000;
+}

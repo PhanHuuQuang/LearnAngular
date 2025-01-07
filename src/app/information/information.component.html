@@ -1,1 +1,41 @@
-<p>information works!</p>
+<section class="information-container">
+  <section class="split left">
+    <button class="btn-back">Back to menu</button>
+    <h3>My Infor</h3>
+    <div class="information-list">
+      <span *ngFor="let item of inforTitleList" class="title-list">
+        <p class="title-text">
+          <fa-icon class="angle-right-icon" [icon]="'angle-right'" />
+          {{ item.title }}
+        </p>
+      </span>
+    </div>
+    <h3>My Project</h3>
+    <div *ngFor="let item of projectList">
+      <button
+        (click)="openProjectInfor(item.projectId)"
+        class="btn-open-project"
+      >
+        <span *ngIf="openProjectId !== item.projectId">{{ item.name }}</span>
+        <fa-icon *ngIf="openProjectId === item.projectId" [icon]="'xmark'" />
+      </button>
+      <table
+        *ngIf="openProjectId === item.projectId"
+        class="project-list-table"
+      >
+        <tbody>
+          <tr *ngFor="let title of projectTableTitle">
+            <th>{{ title.title }}</th>
+            <td>{{ item[title.key] }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- <ul id="data">
+    <li>Name</li>
+    <li>Age</li>
+    <li>State</li>
+  </ul> -->
+  <section class="split right"></section>
+</section>

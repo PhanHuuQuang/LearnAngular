@@ -1,1 +1,15 @@
-<p>contact works!</p>
+<section class="contact-container">
+  <section class="contact-section">
+    <p class="contact-title">Contacts</p>
+    <h1 class="contact-text">Get in touch</h1>
+    <p class="contact-email">phanhuuquang8888&#64;gmail.com</p>
+    <div class="contact-icon-list">
+      <fa-icon *ngFor="let item of linkIcon" [icon]="item" />
+    </div>
+  </section>
+  <p class="contact-footer-text">
+    Copyright <span>&#169;</span> 2024. All rights reserved. Developed by Phan
+    Huu Quang
+    <fa-icon [icon]="'heart'" style="color: red" />
+  </p>
+</section>

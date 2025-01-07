@@ -1,0 +1,36 @@
+.skills-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    background-color: #e4f1fe;
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.skills-title {
+    margin: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(84, 159, 184);
+}
+
+.skills-text {
+    margin: 10px;
+    font-size: 35px;
+}
+
+.skills-image-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px;
+}
+
+.skills-icon {
+    font-size: 90px;
+}
+
+.skills-icon:hover {
+    filter: drop-shadow(3px 4px 1px #000);
+}

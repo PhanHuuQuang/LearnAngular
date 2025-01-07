@@ -12,11 +12,28 @@
   </div>
   <p class="title-university">Quy Nhon University</p>
   <div class="social-links">
-    <a href="#"><i class="fa fa-instagram"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/qg.13h.02p/" target="_blank">
+      <i class="fa fa-instagram"></i>
+    </a>
+    <a href="https://x.com/i/flow/login" target="_blank">
+      <i class="fa fa-twitter"></i>
+    </a>
+    <a href="https://github.com/PhanHuuQuang" target="_blank">
+      <i class="fa fa-github"></i>
+    </a>
+    <a href="https://www.facebook.com/quang.phan.756859" target="_blank">
+      <i class="fa fa-facebook"></i>
+    </a>
   </div>
-  <p><button>Detail Information</button></p>
-  <p><button>Contact</button></p>
+
+  <p>
+    <button *ngIf="!openDetailInforState" (click)="clickDetailInformation()">
+      Detail Information
+    </button>
+    <button *ngIf="openDetailInforState" (click)="closeDetailInformation()">
+      Close
+    </button>
+  </p>
+
+  <p><button (click)="clickMore()">More...</button></p>
 </div>

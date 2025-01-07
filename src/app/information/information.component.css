@@ -1,0 +1,129 @@
+.information-container {
+    border: 2px solid transparent;
+    background:
+        linear-gradient(aliceblue 0 0) padding-box,
+        linear-gradient(to right, #9c20aa, #fb3570) border-box;
+}
+
+/* MY INFOR */
+.information-list {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    gap: 5px;
+}
+
+.information-list,
+.title-list {
+    padding: 0.6em 0.3em;
+    border: 2px ridge transparent;
+    background:
+        linear-gradient(#000 0 0) padding-box,
+        linear-gradient(to right, #9c20aa, #fb3570);
+    cursor: pointer;
+}
+
+.information-list .title-list:hover {
+    border: 2px ridge black;
+    opacity: 0.7;
+    background: linear-gradient(to right, #9c20aa, #fb3570);
+
+    .title-text {
+        -webkit-text-fill-color: white;
+    }
+
+    .angle-right-icon {
+        color: #000;
+    }
+}
+
+
+.angle-right-icon {
+    color: #fff;
+}
+
+
+.title-text {
+    margin: 0;
+    font-weight: bold;
+    background: linear-gradient(to right, #9c20aa, #fb3570);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    width: 25vw;
+
+}
+
+ul li {
+    padding: 1em 2em .8em 2em;
+    border: 1px solid black;
+
+}
+
+
+/* MY PROJECT */
+h3 {
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(to right, #fff 20%, #9c20aa 30%, #fb3570 70%, #fff 80%);
+}
+
+.project-list-table {
+    border-collapse: separate;
+    border: 2px ridge wheat;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.project-list-table th,
+td {
+    border: 1.5px ridge transparent;
+    background:
+        linear-gradient(aliceblue 0 0) padding-box,
+        linear-gradient(to right, #9c20aa, #fb3570);
+}
+
+.project-list-table th {
+    width: 100px;
+}
+
+button {
+    outline: 0;
+    display: inline-block;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 1em;
+}
+
+button:hover {
+    opacity: 0.7;
+    background: linear-gradient(to right, #9c20aa, #fb3570) border-box;
+}
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.left {
+    width: 30%;
+    left: 0;
+}
+
+.right {
+    width: 70%;
+    right: 0;
+}

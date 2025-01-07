@@ -1,0 +1,13 @@
+<section class="menu-container">
+  <h1 class="menu-name">My Portfolio</h1>
+  <ul class="menu-list">
+    <li *ngFor="let item of listButtonNavigate">
+      <button
+        [className]="currentLocation === item.key ? 'active' : ''"
+        (click)="clickNavigate(item.key)"
+      >
+        {{ item.name }}
+      </button>
+    </li>
+  </ul>
+</section>
